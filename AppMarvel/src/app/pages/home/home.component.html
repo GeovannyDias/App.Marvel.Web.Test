@@ -1,0 +1,36 @@
+<div class="content">
+    <div class="input-container">
+        <div class="search-content">
+            <input type="text" class="search-input" placeholder="Search" [ngModel]="searchText"
+                (ngModelChange)="searchCharacter($event)">
+            <button class="btn-search">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="card-container">
+        <div class="card-content" *ngFor="let character of dataCharacters | filter:page:searchText">
+            <div class="card-title">{{ character.name }}</div>
+            <div class="card-body">
+                <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" [alt]="character.name"
+                    class="image">
+                <div class="list-available">
+                    <p>Available comics: {{ character.comics.available }}</p>
+                    <p>Available series: {{ character.series.available }}</p>
+                    <p>Available stories: {{ character.stories.available }}</p>
+                    <p>Available events: {{ character.events.available }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn" (click)="prevPage()">&#10094;&#10094; Previous</button>
+        <button class="btn" (click)="nextPage()" [disabled]="(dataCharacters | filter:page:searchText).length < 6">
+            Next &#10095;&#10095;
+        </button>
+    </div>
+</div>
