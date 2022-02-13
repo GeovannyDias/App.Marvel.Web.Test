@@ -21,11 +21,7 @@ export class HomeComponent implements OnInit {
   getCharacters() {
     this.marvelService.getCharacters().subscribe(res => {
       this.dataCharacters = res.data.results
-    },
-      error => {
-        console.log('ERROR:', error);
-      }
-    );
+    }, error => console.log('ERROR:', error));
   }
 
   searchCharacter(searchTxt: string) {
@@ -40,7 +36,6 @@ export class HomeComponent implements OnInit {
 
   nextPage() {
     this.page += 6;
-    console.log('this.page', this.page);
   }
 
 }
