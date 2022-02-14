@@ -21,8 +21,7 @@ ng test --code-coverage
 
 See coverage report run index.html file:
 
-\App.Marvel.Web.Test>
-cd viajero-sudamericano/coverage/viajero-sudamericano/index.html
+\App.Marvel.Web.Test> cd \AppMarvel\coverage\AppMarvel\index.htm
 
 ```
 
