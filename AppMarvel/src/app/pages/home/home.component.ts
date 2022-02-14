@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   getCharacters() {
     this.marvelService.getCharacters().subscribe(res => {
-      this.dataCharacters = res.data.results
+      this.dataCharacters = res.data.results;
     }, error => console.log('ERROR:', error));
   }
 
@@ -28,7 +28,6 @@ export class HomeComponent implements OnInit {
     this.page = 0;
     this.searchText = searchTxt;
   }
-
 
   prevPage() {
     if (this.page > 0) this.page -= 6;
@@ -39,3 +38,4 @@ export class HomeComponent implements OnInit {
   }
 
 }
+

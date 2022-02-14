@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from "@angular/common/http";
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-import { PipesModule } from './shared/pipes/pipes.module';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,8 +16,6 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    PipesModule,
-    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

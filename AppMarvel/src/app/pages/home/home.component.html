@@ -9,10 +9,15 @@
         </ng-container>
     </div>
 
-    <div class="btn-container">
+    <div class="btn-container" *ngIf="dataCharacters.length !== 0">
         <button class="btn" (click)="prevPage()">&#10094;&#10094; Previous</button>
         <button class="btn" (click)="nextPage()" [disabled]="(dataCharacters | filter:page:searchText).length < 6">
             Next &#10095;&#10095;
         </button>
     </div>
+
+    <ng-container *ngIf="dataCharacters.length === 0">
+        <p>No results found.</p>
+    </ng-container>
+
 </div>

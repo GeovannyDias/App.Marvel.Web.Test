@@ -20,7 +20,7 @@ export interface ResultMarvelI {
     id: number;
     name: string;
     description: string;
-    modified: Date;
+    modified: Date | string;
     thumbnail: Thumbnail;
     resourceURI: string;
     comics: Comics;

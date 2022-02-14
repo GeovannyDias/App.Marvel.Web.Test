@@ -1,4 +1,4 @@
-<div class="card-content">
+<div class="card-content" *ngIf="character">
     <div class="card-title">{{ character.name }}</div>
     <div class="card-body">
         <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" [alt]="character.name"
