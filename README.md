@@ -1,6 +1,23 @@
 # App.Marvel.Web.Test
-Dashboard App Marvel - Angular - Test
+App Marvel - Angular - Test
 
+## Run Project
+
+```
+
+npm i
+
+ng server --open
+
+```
+
+## Run - Unit Test
+
+```
+
+ng test --code-coverage
+
+```
 
 
 ## Result
