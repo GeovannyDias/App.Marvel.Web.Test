@@ -7,7 +7,7 @@ App Marvel - Angular - Test
 
 npm i
 
-ng server --open
+ng serve --open
 
 ```
 
