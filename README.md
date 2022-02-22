@@ -3,7 +3,8 @@ App Marvel - Angular - Test
 
 ## Demo
 
-* **https://test-geo-marvel.web.app/**
+- :point_right: [Live Demo](https://test-geo-marvel.web.app/)
+- :computer: [Author](https://github.com/GeovannyDias)
 
 
 ## Run Project

@@ -35,5 +35,7 @@ firebase deploy --only hosting:marvel
 
 ```
 
+## emoji-cheat-sheet - Icons *.md
 
+* **https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion**
 
