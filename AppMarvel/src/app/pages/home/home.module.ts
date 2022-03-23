@@ -5,11 +5,13 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { PipesModule } from 'src/app/shared/pipes/pipes.module';
 import { ComponentsModule } from './components/components.module';
+import { DetailCharacterComponent } from './components/detail-character/detail-character.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
+    DetailCharacterComponent,
   ],
   imports: [
     CommonModule,
